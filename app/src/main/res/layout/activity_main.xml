@@ -1,0 +1,263 @@
+<!-- activity_main.xml -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/Stud_Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="JHON MARK C. ABLETES"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Stud_Name"
+        android:background="#FFFFFF">
+
+        <LinearLayout
+            android:id="@+id/recipeContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Recipe item layout -->
+            <LinearLayout
+                android:id="@+id/recipe1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:clickable="true"
+                android:background="?android:attr/selectableItemBackground"
+                android:onClick="onRecipe1Click">
+
+                <ImageView
+                    android:id="@+id/recipeImage1"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/recipe1" />
+
+                <TextView
+                    android:id="@+id/recipeName1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="16sp"
+                    android:textColor="#000000"
+                    android:layout_marginStart="16dp"
+                    android:text="Spaghetti" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/recipe2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:clickable="true"
+                android:background="?android:attr/selectableItemBackground"
+                android:onClick="onRecipe2Click">
+
+                <ImageView
+                    android:id="@+id/recipeImage2"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/recipe2" />
+
+                <TextView
+                    android:id="@+id/recipeName2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="16sp"
+                    android:textColor="#000000"
+                    android:layout_marginStart="16dp"
+                    android:text="Grilled Lemon Herb Chicken" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/recipe3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:clickable="true"
+                android:background="?android:attr/selectableItemBackground"
+                android:onClick="onRecipe3Click">
+
+                <ImageView
+                    android:id="@+id/recipeImage3"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/recipe3" />
+
+                <TextView
+                    android:id="@+id/recipeName3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    android:layout_marginStart="16dp"
+                    android:text="Vegetable Stir-Fry" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/recipe4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:clickable="true"
+                android:background="?android:attr/selectableItemBackground"
+                android:onClick="onRecipe4Click">
+
+                <ImageView
+                    android:id="@+id/recipeImage4"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/recipe4" />
+
+                <TextView
+                    android:id="@+id/recipeName4"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="16sp"
+                    android:textColor="#000000"
+                    android:layout_marginStart="16dp"
+                    android:text="Caprese Salad" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/recipe5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:clickable="true"
+                android:background="?android:attr/selectableItemBackground"
+                android:onClick="onRecipe5Click">
+
+                <ImageView
+                    android:id="@+id/recipeImage5"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/recipe5" />
+
+                <TextView
+                    android:id="@+id/recipeName5"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="16sp"
+                    android:textColor="#000000"
+                    android:layout_marginStart="16dp"
+                    android:text="Chocolate Chip Cookies" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/recipe7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:clickable="true"
+                android:background="?android:attr/selectableItemBackground"
+                android:onClick="onRecipe7Click">
+
+                <ImageView
+                    android:id="@+id/recipeImage7"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/recipe7" />
+
+                <TextView
+                    android:id="@+id/recipeName7"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="16sp"
+                    android:textColor="#000000"
+                    android:layout_marginStart="16dp"
+                    android:text="Chicken Fajitas" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/recipe6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                android:onClick="onRecipe6Click"
+                android:padding="16dp">
+
+                <ImageView
+                    android:id="@+id/recipeImage6"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/recipe6" />
+
+                <TextView
+                    android:id="@+id/recipeName6"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_weight="1"
+                    android:text="Margherita Pizza"
+                    android:textColor="#000000"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/recipe8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:clickable="true"
+                android:background="?android:attr/selectableItemBackground"
+                android:onClick="onRecipe8Click">
+
+                <ImageView
+                    android:id="@+id/recipeImage8"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/recipe8" />
+
+                <TextView
+                    android:id="@+id/recipeName8"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="16sp"
+                    android:textColor="#000000"
+                    android:layout_marginStart="16dp"
+                    android:text="Berry Smoothie" />
+
+            </LinearLayout>
+
+            <!-- Add more recipe items as necessary -->
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
+
